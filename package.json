@@ -1,0 +1,25 @@
+{
+  "name": "luis",
+  "version": "1.0.0",
+  "description": "luis bot",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeonseok-seo/luisBot.git"
+  },
+  "keywords": [
+  ],
+  "author": "yeonseok-seo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeonseok-seo/luisBot/issues"
+  },
+  "homepage": "https://github.com/yeonseok-seo/luisBot#readme",
+  "dependencies": {
+    "botbuilder": "^0.6.5",
+    "restify": "^4.0.4"
+  }
+}
