@@ -105,7 +105,7 @@ dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. I can
 var server = restify.createServer();
 
 // Handle Bot Framework messages
-server.post('/api/luis', luis.verifyBotFramework(), luis.listen());
+// server.post('/api/luis', luis.verifyBotFramework(), luis.listen());
 
 // Serve a static web page
 server.get(/.*/, restify.serveStatic({
