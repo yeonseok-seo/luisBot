@@ -98,7 +98,7 @@ dialog.on('builtin.intent.alarm.delete_alarm', [
     }
 ]);
 
-dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. I can only create & delete alarms. And I can only understand English!"));
+dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. I can only create and delete alarms. And I can only understand English!"));
 
 
 // Setup Restify Server
