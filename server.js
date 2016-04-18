@@ -9,7 +9,7 @@ var botConnectorOptions = {
 
 var model = 'https://api.projectoxford.ai/luis/v1/application?id=c413b2ef-382c-45bd-8ff0-f76d60e2a821&subscription-key=c56a0aa53db7476b870b97d40107782f&q=';
 var dialog = new builder.LuisDialog(model);
-var luis = new builder.BotConnectorBot(luisBotConnectorOptions);
+var luis = new builder.BotConnectorBot(botConnectorOptions);
 luis.add('/', dialog);
 
 // Add intent handlers
@@ -105,7 +105,7 @@ dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. I can
 var server = restify.createServer();
 
 // Handle Bot Framework messages
-// server.post('/api/luis', luis.verifyBotFramework(), luis.listen());
+server.post('/api/luis', luis.verifyBotFramework(), luis.listen());
 
 // Serve a static web page
 server.get(/.*/, restify.serveStatic({
